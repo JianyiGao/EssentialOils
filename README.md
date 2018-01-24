@@ -2,7 +2,7 @@
 <dependencies>
     <dependency>
         <groupId>org.mongodb</groupId>
-        <artifactId>mongodb-driver</artifactId>
-        <version>3.4.10</version>
+        <artifactId>mongo-java-driver</artifactId>
+        <version>3.6.1</version>
     </dependency>
 </dependencies>
