@@ -17,6 +17,5 @@ import com.mongodb.client.result.UpdateResult;
 import java.util.ArrayList;
 import java.util.List;
 
-MongoClient mongoClient = new MongoClient();
 MongoClientURI connectionString = new MongoClientURI("mongodb://<hamza.yacoob>:<miamiheat136>@ds263837.mlab.com:63837/essentialoils");
 MongoClient mongoClient = new MongoClient(connectionString);
