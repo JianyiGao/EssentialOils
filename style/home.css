@@ -1,0 +1,61 @@
+.quote {
+
+}
+
+
+#mainbody {
+  height: 100%;
+  width: 50%;
+
+}
+
+.btn-default {
+  border: none;
+  background-color: transparent;
+}
+
+.btn-default:hover{
+  color: red;
+  background-color: transparent;
+}
+
+.glyphicon:hover{
+  color: red;
+}
+
+#shoulder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
+  -webkit-transform:translate(-50%, -50%);
+	-moz-transform: translate(100%, -120%);
+}
+
+#shoulder:hover #shoulder_pain {
+    display:block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*-ms-transform: translate(-50%, -50%);*/
+    -webkit-transform:translate(-50%, -50%);
+  	-moz-transform: translate(20%, -160%);
+}
+
+#shoulder_pain{
+  display: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform: translate(50%, -320%);
+}
+
+.sympton {
+  size:30px;
+  color:grey;
+}
