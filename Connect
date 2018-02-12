@@ -1,14 +1,11 @@
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.ServerAddress;
-
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoCollection;
-
 import org.bson.Document;
 import java.util.Arrays;
 import com.mongodb.Block;
-
 import com.mongodb.client.MongoCursor;
 import static com.mongodb.client.model.Filters.*;
 import com.mongodb.client.result.DeleteResult;
@@ -17,5 +14,20 @@ import com.mongodb.client.result.UpdateResult;
 import java.util.ArrayList;
 import java.util.List;
 
-MongoClientURI connectionString = new MongoClientURI("mongodb://<hamza.yacoob>:<miamiheat136>@ds263837.mlab.com:63837/essentialoils");
-MongoClient mongoClient = new MongoClient(connectionString);
+public class connectJava {
+	public static void main(String[] args) {
+  
+		//Connecting with server
+		System.out.println("Trying to connect...");
+		String textURI = "mongodb://hamza.yacoob:miamiheat136@ds263837.mlab.com:63837/essentialoils";
+		MongoClientURI connectionString = new MongoClientURI(textURI);
+		MongoClient mongoClient = new MongoClient(connectionString);
+		System.out.println("server connection successful!");
+    
+    //connecting with database
+    MongoDatabase dbs = mongoClient.getDatabase("test");
+    System.out.println("Connect to database successfully");
+    System.out.println("Database name " + dbs.getName());
+
+	}
+}
