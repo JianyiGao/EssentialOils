@@ -1,0 +1,27 @@
+body {
+  font-family: 'Poiret One', cursive;
+}
+
+.nav {
+  font-size: 20px;
+}
+
+.element {
+  margin-left: 1%;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.list-group {
+  border: none;
+}
+
+#effect {
+  font-size: 25px;
+  margin-right:2%;
+}
+
+
+.list-group-item {
+border:none;
+}

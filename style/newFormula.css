@@ -1,0 +1,24 @@
+body {
+  font-family: 'Poiret One', cursive;
+}
+
+.nav {
+  font-size: 20px;
+}
+
+.input-group {
+  padding-bottom: 2%;
+}
+
+.input-group-addon {
+  font-size: 22px;
+}
+
+.form-control {
+  font-size: 22px;
+  height: 40px
+}
+
+.btn {
+  font-size: 17px;
+}
