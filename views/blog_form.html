@@ -72,7 +72,7 @@
     </nav>
 
     <div class="page-header col-md-offset-1 col-md-10">
-      <h1>Tell us your essential oil <small>We need your help to make essential oil better!</small></h1>
+      <h1>Topic of the day</h1>
     </div>
 
     <div class ="col-md-offset-1">
@@ -84,50 +84,22 @@
         <span class="input-group-addon" id="basic-addon1">@</span>
         <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
       </div>
+      <div class="input-group col-md-11">
+        <span class="input-group-addon" id="basic-addon1">Introduction</span>
+        <textarea type="text" rows="5" cols="80" class="form-control" placeholder="Tell us about yourself" aria-describedby="basic-addon1">
+        </textarea>
+      </div>
       <div class="input-group col-md-6">
-        <span class="input-group-addon" id="basic-addon1">Formula</span>
-        <input type="text" class="form-control" placeholder="What's it for?" aria-describedby="basic-addon1">
+        <span class="input-group-addon" id="basic-addon1">Subject</span>
+        <input type="text" class="form-control" placeholder="What's the article about?" aria-describedby="basic-addon1">
       </div>
-      <button type="button" class="btn btn-default deleteService" style = "float:right; margin-right: 5%;">Delete Ingredients</button>
-      <button type="button" class="btn btn-default addService" style = "float:right; margin-right: 5%;">Add More Ingredients</button>
-      <div class="input-group col-md-6">
-        <span class="input-group-addon" id="basic-addon1">Ingredient</span>
-        <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group col-md-4" style="float:right; margin-right: 20%">
-        <span class="input-group-addon" id="basic-addon1">Unit</span>
-        <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
-      </div>
-      <div class="input-group col-md-4">
-        <span class="input-group-addon" id="basic-addon1">Amount</span>
-        <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+      <div class="input-group col-md-11">
+        <span class="input-group-addon" id="basic-addon1">Topic</span>
+        <textarea placeholder="Tell us about your area of expertise" type="text" rows="10" cols="80" class="form-control" aria-describedby="basic-addon1">
+        </textarea>
       </div>
     </div>
-      <button type="button" class="btn btn-default" style = "float:right; margin-right: 5%; margin-bottom: 5%">Put your formula on Essential Oil!</button>
-
-<script>
-    $(document).on('click', '.addService', function(){
-  	var html = '  <div class = "newIngredient">\
-                  <div class="input-group col-md-6">\
-                  <span class="input-group-addon" id="basic-addon1">Ingredient</span>\
-                  <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">\
-                  </div>\
-                  <div class="input-group col-md-4" style="float:right; margin-right: 20%">\
-                    <span class="input-group-addon" id="basic-addon1">Unit</span>\
-                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">\
-                  </div>\
-                  <div class="input-group col-md-4">\
-                    <span class="input-group-addon" id="basic-addon1">Amount</span>\
-                    <input type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">\
-                  </div>\
-                  </div>';
-    $(this).parent().append(html);
-  });
-
-  $(document).on('click', '.deleteService', function(){
-    $(".newIngredient").remove();
-  });
-</script>
+      <button type="button" class="btn btn-default" style = "float:right; margin-right: 5%; margin-bottom: 5%">Submit your article</button>
 
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
