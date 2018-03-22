@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1">
+  First name: <input type="text" id="fname" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+<div id="done">hi</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDZG8-clSdbP3a05oO0gTBCXTgF46vNLeg",
+    authDomain: "essentialoils-474c1.firebaseapp.com",
+    databaseURL: "https://essentialoils-474c1.firebaseio.com",
+    projectId: "essentialoils-474c1",
+    storageBucket: "",
+    messagingSenderId: "601290271149"
+  };
+  firebase.initializeApp(config);
+  
+</script>
+
+<script>
+function myFunction() {
+  document.getElementById("frm1").submit(function() {
+      document.getElementById("done").innerHTML = "Done!";
+      var firstName = document.getElementById("fname").val();
+      var db = firebase.database();
+      
+      db.ref("user").set({
+      	name: firstName
+      });
+    });
+}
+
+</script>
+
+</body>
+</html>
