@@ -27,20 +27,5 @@
   
 </script>
 
-<script>
-function myFunction() {
-  document.getElementById("frm1").submit(function() {
-      document.getElementById("done").innerHTML = "Done!";
-      var firstName = document.getElementById("fname").val();
-      var db = firebase.database();
-      
-      db.ref("user").set({
-      	name: firstName
-      });
-    });
-}
-
-</script>
-
 </body>
 </html>
