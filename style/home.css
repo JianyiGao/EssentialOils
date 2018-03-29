@@ -1,11 +1,15 @@
-.quote {
-
+body {
+  font-family: 'Poiret One', cursive;
+  /*background: url(../assets/bg_2.jpg);*/
+  background-size: cover;
 }
 
 
 #mainbody {
   height: 100%;
-  width: 50%;
+  position: relative;
+   display: block;
+
 
 }
 
@@ -23,10 +27,14 @@
   color: red;
 }
 
-#shoulder {
+.body {
   position: relative;
-  top: 50%;
-  left: 50%;
+}
+
+#shoulder {
+  position: absolute;
+  top: 22.5%;
+  left: 50.5%;
   transform: translate(-50%, -50%);
   /*-ms-transform: translate(-50%, -50%);*/
   -webkit-transform:translate(-50%, -50%);
@@ -36,26 +44,114 @@
 #shoulder:hover #shoulder_pain {
     display:block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*-ms-transform: translate(-50%, -50%);*/
-    -webkit-transform:translate(-50%, -50%);
-  	-moz-transform: translate(-50%, -50%);
 }
 
-#shoulder_pain{
-  display: none;
+#head {
   position: absolute;
-  top: 50%;
+  top: 11%;
+  left: 48.9%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
+  -webkit-transform:translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+#head:hover #headache {
+    display:block;
+    position: absolute;
+}
+
+#mouth {
+  position: absolute;
+  top: 18%;
+  left: 48.9%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
+  -webkit-transform:translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+#mouth:hover #mouth_pain {
+    display:block;
+    position: absolute;
+}
+#stomach {
+  position: absolute;
+  top: 38%;
+  left: 48.9%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
+  -webkit-transform:translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+#stomach:hover #stomach_pain {
+    display:block;
+    position: absolute;
+}
+#chest {
+  position: absolute;
+  top: 26%;
+  left: 47.9%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
+  -webkit-transform:translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+#chest:hover #chest_pain {
+    display:block;
+    position: absolute;
+}
+#knee {
+  position: absolute;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   /*-ms-transform: translate(-50%, -50%);*/
   -webkit-transform:translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+#knee:hover #knee_pain {
+    display:block;
+    position: absolute;
+}
+#feet {
+  position: absolute;
+  top: 95%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
+  -webkit-transform:translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+#feet:hover #sore_feet {
+    display:block;
+    position: absolute;
+}
+#hand {
+  position: absolute;
+  top: 55%;
+  left: 51.8%;
+  transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
+  -webkit-transform:translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+#hand:hover #hand_pain {
+    display:block;
+    position: absolute;
+}
+
+#shoulder_pain{
+  display: none;
 }
 
 .sympton {
   size:30px;
   color:grey;
+  display: none;
 }
