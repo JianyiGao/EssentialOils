@@ -1,6 +1,6 @@
 body {
   font-family: 'Poiret One', cursive;
-  background: url(../assets/bg_2.jpg);
+  background: url(../assets/background.jpg);
   background-size: cover;
 }
 
@@ -23,4 +23,31 @@ body {
 
 .btn {
   font-size: 17px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .header .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .header .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+        color: #ccc;
+    }
+
+    .header .navbar-collapse {
+        margin-left: 20px;
+        border-top: none;
+        box-shadow: none;
+    }
+
+    .header .main{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .header .main h1{
+        font-size: 42px;
+    }
 }
