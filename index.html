@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jianyi Gao's Personal Webpage">
     <meta name="author" content="Jianyi Gao">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
@@ -73,7 +72,34 @@
     <div class="quote col-md-offset-1 col-md-3">
       <div class="panel panel-default">
         <div class="panel-body">
-          About Essential Oil
+          <span>About Essential Oil</span>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+            <!-- Identify your business so that you can collect the payments. -->
+            <input type="hidden" name="business" value="alice@mystore.com">
+
+            <!-- Specify a Subscribe button. -->
+            <input type="hidden" name="cmd" value="_xclick-subscriptions">
+            <!-- Identify the subscription. -->
+            <input type="hidden" name="item_name" value="Alice's Weekly Digest">
+            <input type="hidden" name="item_number" value="DIG Weekly">
+
+            <!-- Set the terms of the regular subscription. -->
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="a3" value="5.00">
+            <input type="hidden" name="p3" value="1">
+            <input type="hidden" name="t3" value="M">
+
+            <!-- Set recurring payments until canceled. -->
+            <input type="hidden" name="src" value="1">
+
+            <!-- Display the payment button. -->
+            <input type="image" name="submit"
+            src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif"
+            alt="Subscribe">
+            <img alt="" width="1" height="1"
+            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+          </form>
         </div>
       </div>
     </div>
