@@ -35,6 +35,18 @@ body {
   position: relative;
 }
 
+.body:hover{
+  position: relative;
+}
+
+.hover {
+  background: none;
+}
+
+.hover:hover {
+  background: red;
+}
+
 #shoulder {
   position: absolute;
   top: 22.5%;
@@ -45,7 +57,7 @@ body {
 	-moz-transform: translate(-50%, -50%);
 }
 
-#shoulder:hover #shoulder_pain {
+#shoulder:hover{
     display:block;
     position: absolute;
 }
